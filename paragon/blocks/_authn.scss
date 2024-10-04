@@ -1,0 +1,233 @@
+html {
+    margin: 0 !important;
+}
+
+#root {
+    .layout {
+        .logo,
+        .logo-small {
+            height: $header-logo-height;
+            max-height: 60px;
+            width: auto;
+
+            @include media-breakpoint-down("lg") {
+                margin-left: 0;
+            }
+
+            @include media-breakpoint-down("xs") {
+                height: 38px;
+            }
+        }
+
+        .pgn__hyperlink + .d-flex {
+            @include media-breakpoint-down("sm") {
+                margin: $spacer !important;
+            }
+
+            @include media-breakpoint-down("xs") {
+                margin: 5px !important;
+            }
+        }
+
+        & > .content.align-items-center {
+            @include media-breakpoint-down(sm) {
+                padding: 15px !important;
+            }
+        }
+
+        .bg-white {
+            @include media-breakpoint-down("lg") {
+                display: none;
+            }
+        }
+
+        .bg-primary-400,
+        .bg-light-200 {
+            background-color: $login-registration-left-bg !important;
+
+            @include media-breakpoint-down("lg") {
+                flex: 0 0 100%;
+                max-width: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        .bg-primary-400 h1 {
+            @include media-breakpoint-down("lg") {
+                margin: 3rem .5rem !important;
+            }
+        }
+
+        .bg-light-200 {
+            h1 {
+                @include media-breakpoint-down("lg") {
+                    margin: 1rem 0 .5rem;
+                    font-size: 18px;
+                }
+
+                @include media-breakpoint-down("sm") {
+                    margin: 0 0 .5rem;
+                    font-size: 14px;
+                }
+
+                @include media-breakpoint-down("xs") {
+                    margin: .5rem 0;
+                }
+            }
+
+            h2 {
+                @include media-breakpoint-down("lg") {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+
+                @include media-breakpoint-down("xs") {
+                    font-size: 36px;
+                    line-height: 45px;
+                }
+            }
+        }
+
+        .large-screen-svg-primary,
+        .medium-screen-svg-primary,
+        .large-screen-svg-light {
+            fill: $login-registration-left-bg;
+        }
+
+        h1.text-white,
+        h2.complete-your-profile,
+        h2.display-1,
+        h2.h1 {
+            color: $black !important;
+
+            .text-accent-a {
+                color: $primary !important;
+            }
+        }
+
+        .large-yellow-line {
+            border-color: $primary;
+        }
+
+        .medium-yellow-line,
+        .small-yellow-line {
+            display: none;
+        }
+
+        .col-md-10.bg-light-200 .d-flex.align-items-center {
+            margin-left: 0 !important;
+
+            h1.data-hj-suppress {
+                max-width: none;
+            }
+        }
+    }
+
+    #forget-password-form .alert-content .alert-link {
+        color: $primary !important;
+
+        &:hover {
+            color: darken($primary, 15%) !important;
+        }
+    }
+
+    // Error page message
+
+    & > .py-5.container-fluid .row {
+        width: 100%;
+    }
+
+    // Not found page messages
+
+    & > .container-fluid > .mw-32em {
+        margin: 0 auto;
+    }
+
+    // oauth buttons
+
+    #registration-form,
+    #sign-in-form {
+        .btn-social {
+            background: none;
+
+            @extend .btn-outline-primary;
+
+            &:focus:before {
+                display: none;
+            }
+
+            .font-container {
+                background-color: $primary;
+            }
+        }
+    }
+
+    // top stripe
+
+    .extra-large-screen-top-stripe {
+        flex: auto;
+
+        @include media-breakpoint-up("xl") {
+            display: flex;
+            height: .5rem;
+            background-image: linear-gradient(
+                102.02deg,
+                darken($primary, 20%) 10%,
+                darken($primary, 10%) 10%,
+                darken($primary, 10%) 45%,
+                $primary 45%,
+                $primary 55%,
+                lighten($primary, 10%) 55%,
+                lighten($primary, 10%) 75%,
+                lighten($primary, 20%) 75%,
+            );
+            background-repeat: no-repeat;
+        }
+    }
+
+    .medium-screen-top-stripe {
+        display: flex;
+        height: .5rem;
+
+        @include media-breakpoint-only("lg") {
+            background-image: linear-gradient(
+                102.02deg,
+                darken($primary, 10%) 10%,
+                $primary 10%,
+                $primary 65%,
+                lighten($primary, 10%) 65%,
+                lighten($primary, 10%) 75%,
+                lighten($primary, 20%) 75%,
+                lighten($primary, 20%) 75%
+            );
+            background-repeat: no-repeat;
+        }
+
+        @include media-breakpoint-only("md") {
+            background-image: linear-gradient(
+                102.02deg,
+                darken($primary, 10%),
+                darken($primary, 10%) 10%,
+                $brand 10%,
+                $brand 90%,
+                lighten($primary, 10%) 90%,
+                lighten($primary, 10%) 100%,
+            );
+            background-repeat: no-repeat;
+        }
+    }
+
+    .small-screen-top-stripe {
+        height: .25rem;
+        background-image: linear-gradient(
+            102.02deg,
+            $primary,
+            $primary 20%,
+            lighten($primary, 10%) 20%,
+        );
+        background-repeat: no-repeat;
+    }
+}

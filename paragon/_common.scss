@@ -1,0 +1,27 @@
+body {
+    font-family: $font;
+}
+
+.container-fluid {
+    max-width: $container-width;
+}
+
+#main-content:not(h1) {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#root,
+#root > div:first-child:last-child:not(.pgn__spinner) {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    & > main {
+        flex: 1 1 auto;
+    }
+}
+
+#courseTabsNavigation ~ .header-action-bar ~ .d-flex.flex-row .d-flex .btn-outline-dark {
+    @extend .btn-outline-primary;
+}

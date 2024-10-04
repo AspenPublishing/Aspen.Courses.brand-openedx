@@ -1,0 +1,17 @@
+.pgn__menu-select-trigger-btn {
+    @extend .text-truncate;
+
+    padding: 0;
+    display: block;
+    max-width: 100%;
+    color: $primary;
+    background: transparent;
+    border: none;
+
+    @include hover {
+        background: transparent;
+        border: none;
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+}

@@ -2,6 +2,10 @@
 // See _variables.scss in https://github.com/openedx/paragon/blob/master/scss/core/ for reference
 $primary: #bf2d2e;
 $brand: #bf2d2e;
+$link-color: $primary !default;
+$black: #000;
+$white: #fff;
+$inline-link-color: $primary;
 $primary-light: #fff6d05e;
 $light-dark: #110906;
 $text-color: #110906;
@@ -14,3 +18,35 @@ $accent-a: #bf2d2e;
 $page-color-transition: transparent .2s ease, color .2s ease;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+// common settings
+$container-width: 1230px;
+$border-radius: 3px;
+$font: "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$collapsible-card-spacer-icon: 1.5rem;
+
+// settings for header
+$header-vertical-padding: 30px;
+$header-logo-height: 45px;
+$header-logo-height-mobile: 40px;
+$header-nav-link-color: $primary;
+$header-nav-link-color-hover: darken($primary, 20%);
+
+// settings for footer
+$footer-logo-height: $header-logo-height;
+$footer-bg: #110906;
+$footer-nav-link-color: #fff;
+$footer-nav-link-color-hover: darken($footer-nav-link-color, 20%);
+$footer-support-text-and-logo: #fff;
+$footer-social-link-bg: #d6ae75;
+$footer-social-link-bg-hover: lighten($footer-social-link-bg, 20%);
+
+// settings for cookie banner
+$cookie-banner-cta-base: $primary;
+$cookie-banner-cta-hover: darken($cookie-banner-cta-base, 20%);
+
+// login and regisration pages
+$login-registration-left-bg: #fef6e9;
+
+// default bootstrap variables
+$col-gutter-width: 24px;

@@ -1,0 +1,136 @@
+.sequence-container {
+    width: 100%;
+}
+
+.sequence-navigation {
+    @media (max-width: 576px) {
+        width: calc(100% - 55px) !important;
+
+        & + .d-flex.ml-auto {
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            .icon-container {
+                height: 44px;
+            }
+
+            & > div {
+                margin: 0 !important;
+            }
+        }
+    }
+}
+
+.sequence-navigation-tabs {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+button.notification-trigger-btn {
+    @media (max-width: 576px) {
+        right: 0;
+        width: 51px;
+        margin-right: 0;
+    }
+}
+
+.pgn__data-table-layout-main {
+    max-width: 100%;
+}
+
+html[dir="rtl"] .upgrade-notification-ul {
+    margin-left: 2.5em !important;
+    margin-right: 0 !important;
+}
+
+html[dir] .course-tabs-navigation .nav {
+    .dropdown-menu .dropdown-item {
+        border: none;
+
+        &:hover,
+        &:focus,
+        &:focus:hover,
+        &:focus:hover:active {
+            border: none;
+            color: $primary;
+        }
+
+        &:focus:active {
+            color: #fff;
+        }
+    }
+
+    a:focus,
+    a:focus:hover {
+        color: $primary;
+        border: none;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid;
+    }
+}
+
+.course-outline-tab .card .pgn__card-section .pgn__form-switch-input:checked {
+    border-color: #454545;
+}
+
+.learning-header + div:not([class], [data-testid]),
+.learning-header + p.text-center.py-5.mx-auto {
+    flex: 1 1 auto;
+}
+
+div[data-testid="exam-timer"] {
+    line-height: 1.5;
+
+    .alert-link {
+        cursor: pointer;
+    }
+
+    .d-flex {
+        flex-grow: 0;
+    }
+
+    .exam-timer-clock {
+        justify-content: flex-end !important;
+        flex-grow: 0 !important;
+    }
+}
+
+nav[aria-label="breadcrumb"] .pgn__menu-select .pgn__menu-select-popup {
+    position: static;
+}
+
+.unit-container .unit > h1 + .sr-only + button.text-primary-500 {
+    font-size: 18px;
+}
+
+.grades {
+    table.pgn__data-table {
+        font-size: 18px;
+
+        thead th {
+            h5,
+            .h5 {
+                font-size: 18px;
+            }
+        }
+
+        .small,
+        small,
+        .x-small {
+            font-size: 100%;
+        }
+    }
+
+    .pgn__data-table-footer {
+        .small,
+        small {
+            font-size: 18px;
+        }
+    }
+
+    section > .list-unstyled.mt-2 .x-small,
+    .my-3 + .x-small {
+        font-size: 100%;
+    }
+}

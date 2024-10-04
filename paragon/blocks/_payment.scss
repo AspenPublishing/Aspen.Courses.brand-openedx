@@ -1,0 +1,12 @@
+.basket-section select {
+    &#cardExpirationMonth,
+    &#cardExpirationYear,
+    &#country {
+        background: $white url("../../select-arrow.png") no-repeat 100% 50% !important;
+        background-size: 27px 7px !important;
+    }
+}
+
+.page__payment .form-group .lock-icon {
+    top: -30px !important;
+}

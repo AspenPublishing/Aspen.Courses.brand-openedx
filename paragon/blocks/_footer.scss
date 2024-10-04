@@ -1,0 +1,204 @@
+footer.footer {
+    background-color: $footer-bg;
+    padding: 50px 0 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #c5c6c7;
+    box-shadow: 0 0 5px 0 rgb($black, .1);
+
+    .holder {
+        max-width: $container-width;
+        padding: 0 15px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .footer-nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px;
+        line-height: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+        }
+
+        &__item {
+            margin: 0 8px;
+            text-align: center;
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__link {
+            font-size: 16px;
+            line-height: 1.1;
+            color: $footer-nav-link-color;
+            text-decoration: none;
+
+            &:visited,
+            &:active,
+            &:focus {
+                color: $footer-nav-link-color;
+            }
+
+            &:hover {
+                border-bottom: none;
+                color: $footer-nav-link-color-hover;
+            }
+        }
+    }
+
+    .footer-social-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 15px;
+        }
+
+        &__item {
+            margin: 0 4px;
+            width: 35px;
+            height: 35px;
+
+            @include media-breakpoint-down(md) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__link {
+            display: block;
+        }
+
+        &__svg {
+            width: 35px;
+            height: 35px;
+            fill: $footer-social-link-bg;
+
+            &:hover,
+            &:focus,
+            &:active {
+                fill: $footer-social-link-bg-hover;
+            }
+        }
+    }
+
+    .footer-holder {
+        display: flex;
+        justify-content: center;
+        min-height: 40px;
+        position: relative;
+        margin-bottom: 32px;
+
+        @include media-breakpoint-up(lg) {
+            flex-wrap: nowrap;
+        }
+
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+    }
+
+    .footer-logo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 0 0 15px;
+        order: 2;
+
+        @include media-breakpoint-up(lg) {
+            margin: 0;
+            width: auto;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translateY(calc(-50% + 20px));
+        }
+
+        img {
+            height: $footer-logo-height;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+
+    .footer-support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 3;
+        position: relative;
+        right: -13px;
+        font-size: 12px;
+        line-height: 1.2px;
+        color: $footer-support-text-and-logo;
+        font-style: italic;
+
+        @include media-breakpoint-up(lg) {
+            width: auto;
+            position: absolute;
+            top: 0;
+            transform: translateY(calc(-50% + 20px));
+        }
+
+        &__edx {
+            display: block;
+            position: relative;
+            top: -1px;
+            margin-right: 3px;
+
+            img {
+                height: 40px;
+            }
+        }
+
+        &__rg {
+            color: inherit;
+            display: block;
+            margin-top: -4px;
+
+            &:active,
+            &:hover,
+            &:focus {
+                color: $footer-support-text-and-logo;
+                opacity: .8;
+                text-decoration: none;
+            }
+        }
+
+        &__logo {
+            width: 23px;
+            height: 23px;
+            position: relative;
+            margin-left: 7px;
+            top: -1px;
+            fill: $footer-support-text-and-logo;
+
+            &--is-modified {
+                fill: $footer-social-link-bg;
+            }
+        }
+    }
+
+    .footer-copyright {
+        text-align: center;
+        color: #8b8686;
+        font-size: 12px;
+
+        p {
+            margin: 0;
+        }
+    }
+}

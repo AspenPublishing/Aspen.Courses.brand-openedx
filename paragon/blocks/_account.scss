@@ -1,0 +1,13 @@
+.account-section#social-media .pgn-transition-replace-group .form-group p {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.page__account-settings .jump-nav li {
+    margin-bottom: 46px !important;
+
+    .active {
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,72 @@
+.settingsWidget .btn-inline.text-info-500 {
+    color: $primary !important;
+
+    &:hover {
+        color: $link-hover-color !important;
+    }
+}
+
+.editor-page {
+    .answer-option {
+        .pgn__form-checkbox,
+        .pgn__form-radio {
+            & + .pgn__form-label {
+                min-width: 1.1rem;
+            }
+        }
+    }
+
+    .settingsOption {
+        .pgn__form-checkbox .pgn__form-label {
+            min-width: .7rem;
+        }
+
+        // ToDo: temporary fix of shrinking icon buttons (for palm and possibly quince RG releases only)
+        button.btn-icon {
+            flex-shrink: 0;
+        }
+    }
+
+    .pgn__form-radio-input[name="advanceTypes"] {
+        flex-shrink: 0;
+    }
+
+    .answer-option .mce-content-body {
+        word-break: break-word;
+
+        @include media-breakpoint-down(sm) {
+            overflow: hidden;
+        }
+    }
+
+    .pgn__stack-gap--4.flex-wrap.mb-6 {
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+        }
+    }
+
+    .editProblemView.flex-nowrap {
+        @include media-breakpoint-down(sm) {
+            flex-wrap: wrap !important;
+        }
+
+        & > .flex-grow-1.mb-5 {
+            max-width: calc(100% - 345px);
+
+            @include media-breakpoint-down(sm) {
+                max-width: 100%;
+                margin-bottom: 1.5rem !important;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .editProblemView-settingsColumn {
+                width: 100%;
+
+                .settingsWidget {
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+}

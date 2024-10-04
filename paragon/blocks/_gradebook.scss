@@ -1,0 +1,160 @@
+.gradebook-select-form-control {
+    appearance: none;
+    background: $white url("../../select-arrow.png") no-repeat right center / 27px 7px !important;
+    padding-right: 30px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.gradebook-container {
+    height: auto !important;
+
+    .gbook {
+        .grade-button {
+            text-decoration: none !important;
+        }
+
+        .table tr {
+            td,
+            th {
+                &:nth-child(1),
+                &:nth-child(2) {
+                    @include media-breakpoint-down(sm) {
+                        width: 160px;
+                    }
+                }
+            }
+
+            &:first-child td:nth-child(n) {
+                border-top: none;
+            }
+        }
+    }
+
+    + div button {
+        @include media-breakpoint-down(sm) {
+            margin: 20px 0 !important;
+
+            &:first-child {
+                margin-right: 15px !important;
+            }
+        }
+
+        span {
+            @include media-breakpoint-down(sm) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.gradebook-content {
+    max-width: $container-width;
+    margin: 20px auto 0;
+
+    button#edit-filters-btn {
+        @include media-breakpoint-down(xs) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        span:not(.fa) {
+            margin-left: 5px;
+        }
+
+        + div {
+            @include media-breakpoint-down(xs) {
+                width: 100%;
+            }
+        }
+    }
+
+    > .d-flex {
+        @include media-breakpoint-down(xs) {
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+    }
+
+    .gradebook-header {
+        h1 span,
+        .subtitle-row h3 {
+            word-break: break-word;
+        }
+    }
+
+    select.form-control {
+        @extend .gradebook-select-form-control;
+    }
+}
+
+.page-gradebook {
+    position: relative;
+
+    .sidebar-contents {
+        width: 100%;
+
+        &.opening {
+            width: 100% !important;
+        }
+
+        .badge.badge-info {
+            margin-bottom: 5px;
+            background-color: lighten($brand, 25%);
+
+            button {
+                margin-left: 10px;
+                border-color: lighten($brand, 15%);
+                background-color: lighten($brand, 15%);
+
+                &:hover,
+                &:focus,
+                &:active {
+                    border-color: lighten($brand, 20%);
+                    background-color: lighten($brand, 20%);
+                }
+            }
+        }
+    }
+
+    .sidebar-container {
+        position: relative;
+    }
+
+    aside.sidebar {
+        background-color: $white;
+        overflow: auto;
+
+        [dir="ltr"] &:not(.open) {
+            transform: translateX(-100%);
+        }
+
+        [dir="rtl"] &:not(.open) {
+            transform: translateX(100%);
+        }
+
+        @include media-breakpoint-down(xs) {
+            z-index: 15;
+            width: 100%;
+        }
+
+        select.form-control {
+            @extend .gradebook-select-form-control;
+        }
+
+        .filter-group .grade-filter-action .btn {
+            @extend .btn-primary;
+        }
+    }
+}
+
+.grade-history-header {
+    min-width: 170px;
+    padding-right: 30px !important;
+}
+
+.modal-content .pgn__data-table-layout-wrapper {
+    clear: both;
+    padding: 1rem 0;
+}
