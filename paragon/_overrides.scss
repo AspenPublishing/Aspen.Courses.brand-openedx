@@ -197,19 +197,7 @@
         }
     }
 }
-div[data-learner-type=b2c_learner] {
-    div[role=heading].h2  {
-        font-size: 28px;
-        line-height: 32px;
-        margin: 0 0 20px;
-        color: $text-color;
-        font-weight: 800;
-        @include media-breakpoint-up(md) {
-            font-size: 36px;
-            line-height: 44px;
-        }
-    }
-}
+
 .course-outline-tab {
     padding-bottom: 30px;
     @include media-breakpoint-up(md) {
@@ -266,9 +254,17 @@ div[data-learner-type=b2c_learner] {
 }
 
 .course-tabs-navigation .nav.nav-underline-tabs a {
-    font-size: 18px !important;
+    font-size: 16px !important;
 }
 
 .container-xl {
     max-width: 1600px !important;
+}
+
+.wrap-instructor-info .instructor-info-action {
+    font-size: 0.9rem !important;
+}
+
+[aria-labelledby="masquerade-widget-toggle"] .dropdown-item {
+    color: #212529;
 }
