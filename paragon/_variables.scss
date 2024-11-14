@@ -1,11 +1,31 @@
 $primary: #bf2d2e;
 $primary-light: #c45454;
+$brand: $primary !default;
+$link-color: $primary !default;
+
 $light-dark: #110906;
 $text-color: #110906;
 $text-color-primary: #515661;
 $text-color-light: #515661;
-
+$black: #000;
+$white: #fff;
+$inline-link-color: $primary;
 // for toggle theme button
 $page-color-transition: transparent .2s ease, color .2s ease;
+// common settings
+$border-radius: 3px;
+$font: "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$collapsible-card-spacer-icon: 1.5rem;
+// settings for header
+$header-vertical-padding: 30px;
+$header-logo-height: 45px;
+$header-logo-height-mobile: 40px;
+$header-nav-link-color: $primary;
+$header-nav-link-color-hover: darken($primary, 20%);
+// default bootstrap variables
+$col-gutter-width: 24px;
+
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');

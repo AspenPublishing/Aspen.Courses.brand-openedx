@@ -456,6 +456,16 @@ html {
         }
     }
 }
+
+// Aspen overrides
+.btn-outline-primary {
+    border-color: $primary;
+}
+
+#root header.site-header-desktop .logo img {
+    width: 50px;
+}
+
 @import "./header";
 @import "./footer";
 @import "./login";
