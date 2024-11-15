@@ -353,11 +353,6 @@ html {
             }
             .unit-navigation {
                 max-width: 226px;
-                button, a {
-                    svg {
-                        display: none;
-                    }
-                }
             }
         }
     }
@@ -469,6 +464,22 @@ html {
 
 .masquerade-container {
     margin-left: 20px;
+}
+
+#courseHome-outline .collapsible-body .text-success {
+    color: $aspen-green !important;
+}
+
+.pgn__form-switch-input:checked {
+    background-color: $aspen-green !important;
+}
+
+#courseHome-outline .pgn_collapsible {
+    border-left: 8px solid #F25B22;
+}
+
+.unit-navigation .next-button {
+    margin-left: 5px !important;
 }
 
 @import "./header";
