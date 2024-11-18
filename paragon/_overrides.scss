@@ -452,6 +452,24 @@ html {
     }
 }
 
+
+@import "./header";
+@import "./footer";
+@import "./login";
+@import "./progress";
+@import "./tour";
+@import "./learning";
+@import "./discussion";
+@import "./account";
+@import "./profile";
+@import "./dates";
+@import "./extras";
+
+
+// Including dark theme
+@import "./dark";
+
+
 // Aspen overrides
 .btn-outline-primary {
     border-color: $primary;
@@ -475,7 +493,7 @@ html {
 }
 
 #courseHome-outline .pgn_collapsible {
-    border-left: 8px solid #F25B22;
+    border-left: 8px solid #F25B22 !important;
 }
 
 .unit-navigation .next-button {
@@ -486,19 +504,3 @@ html {
     padding-bottom: 1.3rem !important;
     padding-top: 1.3rem !important;
 }
-
-@import "./header";
-@import "./footer";
-@import "./login";
-@import "./progress";
-@import "./tour";
-@import "./learning";
-@import "./discussion";
-@import "./account";
-@import "./profile";
-@import "./dates";
-@import "./extras";
-
-
-// Including dark theme
-@import "./dark";
