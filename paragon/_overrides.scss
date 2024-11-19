@@ -5,10 +5,12 @@ body, .text-monospace, * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    font-size: 16px;
 }
 html {
     width: 100%;
     overflow-x: hidden;
+    font-size: 16px;
 }
 .container-xl {
     max-width: 1600px !important;
@@ -544,4 +546,12 @@ html {
 
 .course-card {
     border-radius: 16px !important;
+}
+
+.rounded.raised-card {
+    border-left: 8px solid #f25b22 !important;
+}
+
+.grades .pgn__data-table-wrapper {
+    border-left: 8px solid #f25b22 !important;
 }
