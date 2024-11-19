@@ -517,3 +517,19 @@ html {
     justify-content: space-between;
     align-items: center;
 }
+
+.pgn__card .pgn__card-section {
+    padding-top: 0.9rem !important;
+}
+
+.pgn__card-image-cap {
+    border-radius: 10px !important;
+}
+
+.pgn__card .pgn__card-footer {
+    padding: 0 1.25rem !important;
+}
+
+.container-mw-xl {
+    max-width: 1600px !important;
+}
