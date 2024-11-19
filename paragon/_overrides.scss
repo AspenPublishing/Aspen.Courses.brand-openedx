@@ -467,11 +467,6 @@ html {
 @import "./dates";
 @import "./extras";
 
-
-// Including dark theme
-@import "./dark";
-
-
 // Aspen overrides
 .btn-outline-primary {
     border-color: $primary;
@@ -555,3 +550,9 @@ html {
 .grades .pgn__data-table-wrapper {
     border-left: 8px solid #f25b22 !important;
 }
+
+
+// Including dark theme
+@import "./dark";
+
+

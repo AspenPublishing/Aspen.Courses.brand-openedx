@@ -1472,3 +1472,15 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
 .card-details-date {
     color: #ECEEF2;
 }
+
+.course-card-banners .alert-info {
+    background: transparent !important;
+}
+
+.course-card .pgn__card .pgn__card-header .pgn__dropdown-toggle-iconbutton {
+    transform: rotate(358deg);
+}
+
+.course-card .pgn__card .pgn__card-header .pgn__dropdown-toggle-iconbutton:hover {
+    background: $primary-light;
+}
