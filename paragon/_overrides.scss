@@ -533,3 +533,11 @@ html {
 .container-mw-xl {
     max-width: 1600px !important;
 }
+
+.course-card {
+    box-shadow: 0px 2px 10px 0px #14142B26;
+}
+
+.course-card .card {
+    border-radius: 16px !important;
+}
