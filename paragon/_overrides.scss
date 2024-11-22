@@ -596,17 +596,17 @@ root header.site-header-desktop .container-fluid {
   top: 2.2rem;
 }
 
-.pgn__card .pgn__card-footer.horizontal {
+.pgn__card .pgn__card-footer.horizontal, .pgn__card .pgn__card-footer.vertical {
   display: flex;
   flex-direction: row;
   border-top: 1px solid #f2f2f2 !important;
   padding-top: 0.7rem !important;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
-.pgn__card .pgn__card-footer.horizontal hr {
+.pgn__card .pgn__card-footer.horizontal hr, .pgn__card .pgn__card-footer.vertical hr {
   display: none;
 }
 
