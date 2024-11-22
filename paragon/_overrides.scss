@@ -606,5 +606,9 @@ root header.site-header-desktop .container-fluid {
   margin-top: 0.5rem;
 }
 
+.pgn__card .pgn__card-footer.horizontal hr {
+  display: none;
+}
+
 // Including dark theme
 @import "./dark";
