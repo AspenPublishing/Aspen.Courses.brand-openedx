@@ -15,7 +15,7 @@ html {
   font-size: 16px;
 }
 .container-xl {
-  max-width: 1600px !important;
+  max-width: 1400px !important;
   padding-left: 15px !important;
   padding-right: 15 !important;
 }
@@ -546,7 +546,7 @@ root header.site-header-desktop .container-fluid {
 }
 
 .container-mw-xl {
-  max-width: 1600px !important;
+  max-width: 1400px !important;
 }
 
 .course-card {
@@ -612,12 +612,12 @@ root header.site-header-desktop .container-fluid {
 
 .pgn__card .pgn__card-wrapper-image-cap.horizontal {
   @media only screen and (max-width: 576px) {
+    min-width: 100% !important;
     max-width: 100% !important;
-    max-height: 100% !important;
   }
   @media only screen and (min-width: 577px) {
-    max-width: 240px !important;
-    max-height:240px !important;
+    min-width: 240px !important;
+    max-width:240px !important;
   }
 }
 
