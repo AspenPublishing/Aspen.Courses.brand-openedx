@@ -598,7 +598,7 @@ root header.site-header-desktop .container-fluid {
 
 .pgn__card .pgn__card-footer.horizontal, .pgn__card .pgn__card-footer.vertical {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   border-top: 1px solid #f2f2f2 !important;
   padding-top: 0.7rem !important;
   justify-content: center;
