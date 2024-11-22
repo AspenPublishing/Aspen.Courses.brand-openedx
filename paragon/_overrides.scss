@@ -473,12 +473,12 @@ html {
 }
 
 .logo img {
-    height: 43px !important;
+    height: 2.2rem !important;
     width: auto !important;
 }
 
 .masquerade-container {
-    margin-left: 20px;
+    margin: 0 auto;
 }
 
 #courseHome-outline .collapsible-body .text-success {
@@ -516,7 +516,7 @@ html {
 }
 
 .pgn__card .pgn__card-section {
-    padding-top: 0.9rem !important;
+    padding-top: 0.5rem !important;
 }
 
 .pgn__card-image-cap {
@@ -551,6 +551,23 @@ html {
     border-left: 8px solid #f25b22 !important;
 }
 
+.masquerade-bar {
+    padding-left: 0 !important;
+}
+
+.masquerade-bar .masquerade-form-label {
+    padding-left: 0 !important;
+}
+
+// Responsiveness 
+
+#root header.site-header-mobile {
+    height: 5rem;
+}
+
+#root header.site-header-mobile .menu button {
+    top: 2.2rem;
+}
 
 // Including dark theme
 @import "./dark";

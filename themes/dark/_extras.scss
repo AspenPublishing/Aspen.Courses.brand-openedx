@@ -1484,3 +1484,15 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
 .course-card .pgn__card .pgn__card-header .pgn__dropdown-toggle-iconbutton:hover {
     background: $primary-light;
 }
+
+.pgn__card .pgn__card-header .pgn__card-header-title-sm {
+    color: $text-color;
+}
+
+.pgn__card .pgn__card-header .pgn__card-header-subtitle-sm {
+    color: $text-color-primary;
+}
+
+.flag-button {
+    background: $primary-light;
+}
