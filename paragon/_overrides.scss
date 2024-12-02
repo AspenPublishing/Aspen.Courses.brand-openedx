@@ -591,13 +591,30 @@ root header.site-header-desktop .container-fluid {
 
 .pgn__card .pgn__card-footer.horizontal, .pgn__card .pgn__card-footer.vertical {
   display: flex;
-  flex-direction: row !important;
   border-top: 1px solid #f2f2f2 !important;
   padding-top: 0.7rem !important;
-  justify-content: center;
-  align-items: center;
   margin-top: 1rem;
+
+  @media only screen and (min-width: 577px) {
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 576px) {
+    flex-direction: column !important;
+    justify-content: start;
+    align-items: start;
+  }
 }
+
+.course-card .card .pgn__card-footer .pgn__action-row {
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+    padding-top: 10px;
+  }
+}
+
 
 .pgn__card .pgn__card-footer.horizontal hr, .pgn__card .pgn__card-footer.vertical hr {
   display: none;
