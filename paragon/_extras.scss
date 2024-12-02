@@ -96,3 +96,23 @@
 .course-filter-controls-container #course-filter-controls button {
     font-size: 14px;
 }
+
+.pgn__card-header-actions {
+  .pgn__dropdown-toggle-iconbutton {
+    color: #000;
+
+    &:hover, &:active, &:focus {
+      color: $primary;
+      background-color: transparent;
+    }
+    
+    &.show { // When dropdown is open
+      color: $primary;
+      background-color: transparent;
+      
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
