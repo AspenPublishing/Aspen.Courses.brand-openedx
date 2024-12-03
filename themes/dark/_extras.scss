@@ -1477,6 +1477,10 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
     background: transparent !important;
 }
 
+.pgn__card .pgn__card-header {
+    align-items: flex-end;
+}
+
 .course-card .pgn__card .pgn__card-header .pgn__dropdown-toggle-iconbutton {
     transform: rotate(358deg);
 }
@@ -1491,6 +1495,10 @@ section[data-testid=sidebar-NOTIFICATIONS], section[data-testid=sidebar-DISCUSSI
 
 .pgn__card .pgn__card-header .pgn__card-header-subtitle-sm {
     color: $text-color-primary;
+}
+
+.pgn__card-header-actions .pgn__dropdown-toggle-iconbutton {
+    justify-content: end;
 }
 
 .flag-button {
